@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>idk</title>
+    <title>search</title>
+    <link rel="stylesheet" href="Styles-for-website.css">
 </head>
 <body>
+
 <title>More on dance</title>
 </head>
+<h4>
+    search for dance videos below:
+</h4>
 </body>
-<input type="text" name="search" id="search" placeholder="Search here">
+<input type="text" name="search" id="search" placeholder="Search here" oninput="validate()">
 <script>
     function validate(){
         var x = document.search.value;
-        if (x == "hi") {
-            alert("hi")
+        if (x == "ballet") {
+            alert("https://www.youtube.com/watch?v=3TLSrI_hXEw Adam:Giselle (The Royal Ballet) " +
+                "//www.youtube.com/watch?v=sYIHjStEQrk Black Swan / Odile Variation - Zakharova, Osipova, Nunez")
         }
     }
 </script>

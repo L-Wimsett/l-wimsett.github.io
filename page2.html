@@ -2,135 +2,161 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Puzzle</title>
+  <title>Unscramble</title>
+  <link rel="stylesheet" href="Styles-for-website.css">
 </head>
-
-
 <body>
-
-  <div class="Unscramble">
-    <h2>Clues</h2>
-
-
-    <table>
-      <thead>
-      <tr>
-        <th>Clue Number</th>
-        <th>Clue Text</th>
-        <th>Answer</th>
-      </tr>
-      </thead>
-
-
-      <tbody>
-      <tr>
-        <td>1</td>
-        <td>altebl</td>
-        <td><button id="show-answers-btn1">
-          Show Answer
-        </button>
-          <div class="h1">ballet</div>
-        </td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>kflo</td>
-        <td><button id="show-answers-btn2">
-          Show Answer
-        </button>
-          <div class="h2">folk</div>
-        </td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>yrocpmnetra</td>
-        <td><button id="show-answers-btn3">
-          Show Answer
-        </button>
-          <div class="h3">contemporary</div>
-        </td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>zajz</td>
-        <td><button id="show-answers-btn4">
-          Show Answer
-        </button>
-          <div class="h4">jazz</div>
-        </td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>dmnore</td>
-        <td><button id="show-answers-btn5">
-          Show Answer
-        </button>
-          <div class="h5">modern</div>
-        </td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>rclliya</td>
-        <td><button id="show-answers-btn6">
-          Show Answer
-        </button>
-          <div class="h6">lyrical</div>
-        </td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>pta</td>
-        <td><button id="show-answers-btn7">
-          Show Answer
-        </button>
-          <div class="h7">tap</div>
-        </td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>etsret</td>
-        <td><button id="show-answers-btn8">
-          Show Answer
-        </button>
-          <div class="h8">street</div>
-        </td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>anlti</td>
-        <td><button id="show-answers-btn9">
-          Show Answer
-        </button>
-          <div class="h9">latin</div>
-        </td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>neipot</td>
-        <td><button id="show-answers-btn10">
-          Show Answer
-        </button>
-          <div class="h10">pointe</div>
-        </td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td>roca</td>
-        <td><button id="show-answers-btn11">
-          Show Answer
-        </button>
-          <div class="h11">acro</div>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-
-
-
-
-  </div>
+<div class="Unscramble">
+  <h2>Clues</h2>
+  <table id="table">
+    <thead>
+    <tr>
+      <th>Clue Number</th>
+      <th>Clue Text</th>
+      <th>Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td><form name="s1">altebl</form></td>
+      <td> <input type="text" name="ans1">
+        <button id="b1" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><form name="s2">kflo</form></td>
+      <td> <input type="text" name="ans2">
+        <button id="b2" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><form name="s3">yrocpmnetra</form></td>
+      <td> <input type="text" name="ans3">
+        <button id="b3" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><form name="s4">zajz</form></td>
+      <td> <input type="text" name="ans4">
+        <button id="b4" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><form name="s5">dmnore</form></td>
+      <td> <input type="text" name="ans5">
+        <button id="b5" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><form name="s6">rclliya</form></td>
+      <td> <input type="text" name="ans6">
+        <button id="b6" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><form name="s7">pta</form></td>
+      <td> <input type="text" name="ans7">
+        <button id="b7" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><form name="s8">etsret</form></td>
+      <td> <input type="text" name="ans8">
+        <button id="b8" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><form name="s9">anlti</form></td>
+      <td> <input type="text" name="ans9">
+        <button id="b9" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><form name="s10">neipot</form></td>
+      <td> <input type="text" name="ans10">
+        <button id="b10" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><form name="s11">roca</form></td>
+      <td> <input type="text" name="ans11">
+        <button id="b11" type="button" onclick="validate()">Check</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <script>
+    function validate() {
+      var a = document.forms["s1"]["ans1"].value;
+      if (a == "ballet") {
+        document.getElementById("b1").style.color="green";
+        alert("Correct!");
+      }
+      var b = document.forms["s2"]["ans2"].value;
+      if (b == "folk") {
+        document.getElementById("b2").style.color="green";
+        alert("Correct!");
+      }
+      var c = document.forms["s3"]["ans3"].value;
+      if (c == "contemporary") {
+        document.getElementById("b3").style.color="green";
+        alert("Correct!");
+      }
+      var d = document.forms["s4"]["ans4"].value;
+      if (d == "jazz") {
+        document.getElementById("b4").style.color="green";
+        alert("Correct!");
+      }
+      var e = document.forms["s5"]["ans5"].value;
+      if (e == "modern") {
+        document.getElementById("b5").style.color="green";
+        alert("Correct!");
+      }
+      var f = document.forms["s6"]["ans6"].value;
+      if (f == "lurical") {
+        document.getElementById("b6").style.color="green";
+        alert("Correct!");
+      }
+      var g = document.forms["s7"]["ans7"].value;
+      if (g == "tap") {
+        document.getElementById("b7").style.color="green";
+        alert("Correct!");
+      }
+      var h = document.forms["s8"]["ans8"].value;
+      if (h == "street") {
+        document.getElementById("b8").style.color="green";
+        alert("Correct!");
+      }
+      var i = document.forms["s9"]["ans9"].value;
+      if (i == "latin") {
+        document.getElementById("b9").style.color="green";
+        alert("Correct!");
+      }
+      var j = document.forms["s10"]["ans10"].value;
+      if (j == "pointe") {
+        document.getElementById("b10").style.color="green";
+        alert("Correct!");
+      }
+      var k = document.forms["s11"]["ans11"].value;
+      if (k == "acro") {
+        document.getElementById("b11").style.color="green";
+        alert("Correct!");
+      }
+    }
+  </script>
 </div>
 <a href="index.html" class="button-class">Previous page</a>
-<a href="../../page3.html" class="button-class">Next page</a>
+<a href="page3.html" class="button-class">Next page</a>
 </body>
 </html>
