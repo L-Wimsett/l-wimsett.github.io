@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:19px;
+    text-align:center;
+}
+h1 {
+    font-size: 36px;
+    margin:0px;
+    color:white;
+    padding:5px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    color:white;
+}
+#page {
+    max-width: 800px;
+    margin: 20px auto;
+    height: 65%;
+    padding: 30px;
+    background-color:black;
+}
+#header /*Styles for Heading*/ {
+    padding: 5px;
+    text-align: center;
+}
+img {
+    border: double 10px white;
+    width:200px;
+    height:200px;
+}
+#right-column {
+    float: right;
+    width: 350px;
+    text-align:left;
+}
